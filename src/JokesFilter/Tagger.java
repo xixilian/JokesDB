@@ -1,13 +1,26 @@
-package JokesFilter;
+import package JokesFilter;
 import java.sql.*;
 import java.io.*;
 
+/**
+ * Jokes are tagged here.
+ * @author Xizhe Lian
+ * @version 0.0
+ */
 public class Tagger {
 	//private String s;
 	//private StringBuffer sb;
-	
+	enum Tags tags;
+	private String tname;
+	private List<String> taggedJokes;
 	
 	Tagger(){
+		tname = null;
+        taggedJokes = new ArrayList<String>(); 
+	}
+	
+	public String getTagName(){
+		return this.tname;
 	}
 	
 	/**

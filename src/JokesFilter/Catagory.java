@@ -10,10 +10,18 @@ import java.util.List;
 public class Catagory {
 
 	private String cata_name;
-	private List<String> jokes;
+	private List<String> sortedJokes;
+	private List<Tagger> taggedJokes;
 	
+	public Catagory(List<Tagger> ts){
+		this.cata_name = setUpName(ts);
+	}
 	
-	
-	
-	public void sortByCata(String cata_name){}
+	private String setUpName(List<Tagger> ts){
+		String n = null;
+		while(ts.next != null){
+			n = n.concat(ts.getTagName);
+		}
+	}
+	public void sortByCata(List<Tagger> ts){}
 }
