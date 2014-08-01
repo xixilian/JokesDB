@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <classpath>
 	<classpathentry excluding="JokesFilter/" kind="src" path="src"/>
+	<classpathentry excluding="src/" kind="src" path=""/>
 	<classpathentry kind="lib" path="/Users/Gee/Desktop/HIWI/40,000+ Jokes Offr Database/wp.sql"/>
 	<classpathentry exported="true" kind="lib" path="/Users/Gee/Downloads/ojdbc6.jar"/>
 	<classpathentry exported="true" kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
