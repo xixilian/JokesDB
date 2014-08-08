@@ -3,7 +3,7 @@ package JokesFilter;
 import java.util.List;
 
 /**
- * This class represents a catagory
+ * This class represents a catagory. A catagory can use not only one tags.
  * @author Xizhe
  * @version 0.0
  */

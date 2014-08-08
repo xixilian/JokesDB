@@ -9,10 +9,23 @@ import java.util.List;
  */
 public class Filter {
 
+	private String text;
 	private List<Catagory> catas;
+	enum Tags tags;
 	
-	
+	/**
+	 * It works on sql, should be in Catagory maybe? Xizhe 
+	 */
 	public void generateSubGroup() {
 		
 	}
+	
+	/**
+	 * add tags to the joke
+	 */
+	public void tagging(){
+		
+	}
+	
+	
 }

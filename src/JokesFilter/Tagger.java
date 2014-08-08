@@ -10,7 +10,7 @@ import java.io.*;
 public class Tagger {
 	//private String s;
 	//private StringBuffer sb;
-	enum Tags tags;
+	
 	private String tname;
 	private List<String> taggedJokes;
 	
@@ -33,20 +33,23 @@ public class Tagger {
 		Connection con = null;
 		/*ich verstehe nicht ganz...gibts error :/ Xizhe*/
 		try{
-			Class.forName("oracle.jdbc.driver.OracleDriver");
-			con = DriverManager.getConnection("jdbc:oracle:thin:@localhost:1433:@jokes","xizhe","jiji");
+			Class.forName("com.mysql.jdbc.Driver");
+			System.out.println("001");
+			con = DriverManager.getConnection("jdbc:mysql://LocalHost:3306/jokes");
+			System.out.println("002");
 			sql_stmt = con.createStatement();
+			System.out.println("002");
 		}
-		catch (Exception e){
+		catch (SQLException e){
 			System.err.println("Following error occured:" + e);
-			System.exit(-1);
+		//	System.exit(-1);
 		}
-		
+		/*
 		String s = new String();
 		StringBuffer sb = new StringBuffer();
 		
 		try{
-			FileReader fr = new FileReader(new File("/Users/Gee/Desktop/HIWI/40KJokesDatabase/wp.sql.gz"));
+			FileReader fr = new FileReader(new File("/Users/Gee/Desktop/HIWI/40KJokesDatabase/wp.sql"));
 			BufferedReader br = new BufferedReader(fr);
 			
 			while ((s = br.readLine()) != null) {
@@ -57,5 +60,5 @@ public class Tagger {
 		catch(Exception e){
 			e.printStackTrace();
 		}
-		}
+		}*/
 }
