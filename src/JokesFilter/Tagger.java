@@ -29,15 +29,15 @@ public class Tagger {
 	 * @throws SQLException
 	 */
 	public static void main(String[] args) throws SQLException {
-		Statement sql_stmt = null;
+		//Statement sql_stmt = null;
 		Connection con = null;
 		/*ich verstehe nicht ganz...gibts error :/ Xizhe*/
 		try{
 			Class.forName("com.mysql.jdbc.Driver");
 			System.out.println("001");
-			con = DriverManager.getConnection("jdbc:mysql://LocalHost:3306/jokes");
+			con = DriverManager.getConnection("jdbc:mysql://localhost:3306/jokes");
 			System.out.println("002");
-			sql_stmt = con.createStatement();
+		//	sql_stmt = con.createStatement();
 			System.out.println("002");
 		}
 		catch (SQLException e){

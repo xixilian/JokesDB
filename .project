@@ -6,11 +6,6 @@
 	</projects>
 	<buildSpec>
 		<buildCommand>
-			<name>org.eclipse.mylyn.wikitext.ui.wikiTextValidationBuilder</name>
-			<arguments>
-			</arguments>
-		</buildCommand>
-		<buildCommand>
 			<name>org.eclipse.jdt.core.javabuilder</name>
 			<arguments>
 			</arguments>
@@ -18,13 +13,5 @@
 	</buildSpec>
 	<natures>
 		<nature>org.eclipse.jdt.core.javanature</nature>
-		<nature>org.eclipse.mylyn.wikitext.ui.wikiTextNature</nature>
 	</natures>
-	<linkedResources>
-		<link>
-			<name>jokessql.sql</name>
-			<type>1</type>
-			<location>/Users/Gee/Desktop/HIWI/40,000+ Jokes Offr Database/wp.sql</location>
-		</link>
-	</linkedResources>
 </projectDescription>
